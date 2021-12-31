@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Spam Bot
+{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+</style>
+
+
+<!-- Clarity Section -->
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+      <img src="/static/botpic.jpg" alt="App" width="335" height="471">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Spam Bot</b></h1>
+      <h1 class="large-font" style="color:red;"><b>Using Python</b></h1>
+      <p><span style="font-size:24px">E</span> 
+                        ver thought about spamming more than thousands of message to that annoying friend and prank them but
+                        dropped it cause you're too lazy to type and send the same message thousand of times.
+                        Worry not. This project helps you spam messages to friend so that you dont have to do.
+                        <br>
+                        Amazing right? I know.
+                        </p>
+<br>
+        <h1 class="large-font"><b>Enter the text in box given bellow.</b></h1>
+           <h1 class="small-font"><b>And the number of time you want to spam</b></h1>
+     
+        <div>
+              <form method='POST' enctype="multipart/form-data" action="spambot">
+                    {% csrf_token %}
+                <style>
+                .input1{
+                    width: 50%;
+                }
+                .input2{
+                    width: 25%;
+                }
+                </style>
+                        <input id="message" name="message1" class="input1" type="text">
+                        <input id="message" name="message2" class="input2" type="text">
+
+
+                        <br> 
+                        <br>
+                    <button class="button" style="background-color:red">Submit!</button>
+
+        
+        </form>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+{% endblock body %}

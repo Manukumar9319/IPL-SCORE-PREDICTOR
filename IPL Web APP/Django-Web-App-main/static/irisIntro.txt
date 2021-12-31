@@ -1,0 +1,27 @@
+		Several varieties of iris plants (Iris spp.) exist, providing intricate and exquisite blooms in sunny areas of the landscape. 
+                Iris flowers begin blooming in late winter to early spring. A range of varieties provides extended color in the flower bed. 
+                Iris care is minimal once the growing iris is established. Iris plant care consists mainly of dividing the iris plants to assure continued blooms. 
+                Iris plants are abundant multipliers but once the rhizomes of iris plants become crowded, the iris flowers may be limited and the rhizomes need 
+                to be separated.Irises come in many forms, shapes, colors and sizes and the sword-like foliage is attractive when the plant is not in bloom.
+                </p>
+
+                <p></p>
+                        Three main kind of species of iris flower are:
+                        <p>Iris setosa</p>
+                        <p>Iris versicolour</p>
+                        <p>Iris virginica</p>
+                </p>
+
+
+ The Iris dataset was used in R.A. Fisher's classic 1936 paper, The Use of Multiple Measurements in Taxonomic Problems, and can also be found on the UCI Machine Learning Repository.
+
+                    It includes three iris species with large number of samples each as well as some properties about each flower. One flower species is linearly separable from the other two, but the other two are not linearly separable from each other.
+
+                    The columns in this dataset are:
+
+                    Id
+                    SepalLengthCm
+                    SepalWidthCm
+                    PetalLengthCm
+                    PetalWidthCm
+                    Species
